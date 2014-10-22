@@ -1,0 +1,25 @@
+CQL
+===
+Notes: 
+- case insensitive
+
+Commands:
+- DESC KEYSPACES;               => list keyspaces
+- USE keyspace_name;            => use a keyspace
+- DESC TABLES;                  => list tables (CFs) in the keyspace
+- DESC TABLE table_name;        => displays info about a table (e.g. schema)
+- SELECT * FROM tbale_name 
+  WHERE conditions 
+  ALLOW FILTERING;              => selects all rows matching the condition
+
+
+Cassandra CLI
+=============
+Notes:
+- prefer CQL to exlplore the data model (less verbose)
+
+Commands:
+- SHOW KEYSPACES;               => list keyspaces (very verbose)
+- USE keyspace_name;            => use a keyspace
+- DESCRIBE keyspace_name;       => show list of CFs in keyspace (very verbose)
+- LIST CF_name;                 => list the contents of a CF
