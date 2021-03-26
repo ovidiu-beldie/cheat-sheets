@@ -1,0 +1,32 @@
+* Seesions
+  - =tmux new -s <name>= : create new session
+  - =ctrl+b := : command mode
+  - =tmux ls= : list sessions
+  - =tmux a -t <name>= : attach to session with name
+  - =ctrl+b d= : detach from session (will continue in background)
+  - =ctrl+b $= : rename session
+
+* Windows
+  - =ctrl+b c= : create window in session
+  - =ctrl+b w= : display windows
+  - =ctrl+b n= : next window
+  - =ctrl+b p= : previous window
+  - =ctrl+b 0..9= : window by number
+  - =ctrl+b ,= : rename window
+  - =ctrl+b x= : close window
+
+* Panes
+  - =ctrl+b %= : divide window vertically
+  - =ctrl+b "= : divide window horizontally
+  - =ctrl+b x= : close pane
+
+* Help    
+  - =ctrl+b ?=
+
+* Commands
+  - switch scrolling to emacs mode
+  =ctrl+b :setw mode-keys emacs=
+  while in emacs scroll mode:
+    + =Page up= : previous page
+    + =Page down= : next page
+  exit scrolling with =q=
