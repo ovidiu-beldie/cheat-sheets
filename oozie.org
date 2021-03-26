@@ -10,48 +10,68 @@
      
      =oozie job -oozie http://localhost:11000/oozie -config job.properties -submit=
    - Run (= submit + start)
+     
      =oozie job -oozie http://localhost:11000/oozie -config job.properties -run=
    - Start
+     
      =oozie job -oozie http://localhost:11000/oozie -start 14-20090525161321-oozie-joe=
    - Suspend
+     
      =oozie job -oozie http://localhost:11000/oozie -suspend 14-20090525161321-oozie-joe=
    - Rerun
+     
      =oozie job -oozie http://localhost:11000/oozie -config job.properties -rerun 14-20090525161321-oozie-joe=
    - Status
+     
      =oozie job -oozie http://localhost:11000/oozie -info 14-20090525161321-oozie-joe=
    - All workflow runs for a coordinator
+     
      =oozie job -info 0000001-111219170928042-oozie-joe-C@1 -allruns -oozie http://localhost:11000/oozie=
    - All retries for a workflow
+     
      =oozie job -retries 0000000-161212175234862-oozie-puru-W@pig-node -oozie http://localhost:11000/oozie=
    - Check xml definition
+     
      =oozie job -oozie http://localhost:11000/oozie -definition 14-20090525161321-oozie-joe=
    - Logs
+     
      =oozie job -oozie http://localhost:11000/oozie -log 14-20090525161321-oozie-joe=
    - Error logs
+     
      =oozie job -oozie http://localhost:11000/oozie -errorlog 0000000-150121110331712-oozie-puru-B=
    - Filter logs
+     
      =oozie job -log 0000006-140319184715726-oozie-puru-W  -logfilter loglevel=WARN\;limit=3 -oozie http://localhost:11000/oozie/=
    - Dryrun
+     
      =oozie job -oozie http://localhost:11000/oozie -dryrun -config job.properties=
    - Update properties
+     
      =oozie job -oozie http://localhost:11000/oozie -config job.properties -update 0000005-140402104721140-oozie-puru-C -dryrun=
     
 ** Jobs Operations
    - Status
+     
      =oozie jobs -oozie http://localhost:11000/oozie -localtime -len 2 -filter status=RUNNING=
    - Bulk changes
+     
      =oozie jobs -oozie http://localhost:11000/oozie -kill|-suspend|-resume -filter name=cron-coord -jobtype coordinator=
     
 ** Admin
    - List oozie servers
+     
      =oozie admin -oozie http://hostA:11000/oozie -servers=
    - Display config
+     
      =oozie admin -oozie http://localhost:11000/oozie -configuration=
    - Display OS env
+     
      =oozie admin -oozie http://localhost:11000/oozie -osenv=
    - Display Java props
+     
      =oozie admin -oozie http://localhost:11000/oozie -javasysprops=
     
 ** Validation
    - Validate
+     
     =oozie validate myApp/workflow.xml=
