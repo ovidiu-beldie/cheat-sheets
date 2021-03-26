@@ -1,3 +1,5 @@
+#+OPTIONS: \n:t
+
 * Config
   - OOZIE_URL: default val for -oozie arg
     =http://<ip>:11000/oozie=
