@@ -7,6 +7,7 @@
 * CLI commands
 ** Single job
    - Submit
+     
      =oozie job -oozie http://localhost:11000/oozie -config job.properties -submit=
    - Run (= submit + start)
      =oozie job -oozie http://localhost:11000/oozie -config job.properties -run=
