@@ -1,8 +1,9 @@
 * Logs
   - stdout
-      yarn logs -applicationId <app-id>
     
+      =yarn logs -applicationId <app-id>=
   - stderr
-      yarn logs -applicationId <app-id> -log_files stderr
+    
+      =yarn logs -applicationId <app-id> -log_files stderr=
 
     
