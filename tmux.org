@@ -12,7 +12,7 @@
   - =ctrl+b n= : next window
   - =ctrl+b p= : previous window
   - =ctrl+b 0..9= : window by number
-  - =ctrl+b ,= : rename window
+  - =ctrl+b , = : rename window
   - =ctrl+b x= : close window
 
 * Panes
