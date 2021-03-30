@@ -1,0 +1,18 @@
+* Services
+  - =systemctl <tab>= : overview of commands
+  - =systemctl -t help= : unit types
+  - =systemctl lis-unit-files= : all available unit
+  - =systemctl list-units= : list of started units (and order)
+  - =systemctl status <service>=
+  - =systemctl enable|disable <service>= : start|stop service at init
+  - =systemctl start|stop <service>= : start|stop service now
+* Configuration
+  - =systemctl cat <service>.service= : show unit file
+  - =systemctl show <service>.service= : show unit params
+  - =systemctl edit <service>.service= : override service config
+  - =systemctl daemon-reload= : realod after change
+* Target
+  - =systemctl start <targe>.target= : start a target
+  - =systemctl get-default= : get default target at startup
+  - =systemctl isolate <target>.target= : keep only units required by target
+
